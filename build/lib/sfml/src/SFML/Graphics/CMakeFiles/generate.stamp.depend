@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/cmake/Modules/FindFreetype.cmake
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/src/SFML/Graphics/CMakeLists.txt
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/tools/windows/resource.rc.in

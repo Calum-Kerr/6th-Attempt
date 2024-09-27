@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.22/Modules/CMakeParseArguments.cmake
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/cmake/CompilerWarnings.cmake
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/cmake/Macros.cmake
+C:/Users/calum/Desktop/6th-Attempt/lib/sfml/src/SFML/CMakeLists.txt
