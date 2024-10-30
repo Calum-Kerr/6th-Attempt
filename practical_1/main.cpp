@@ -59,9 +59,10 @@ int main(){
         sf::Event event;
         while(window.pollEvent(event)){if(event.type == sf::Event::Closed){window.close();}}
         if(!attackInProgress && (sf::Keyboard::isKeyPressed(sf::Keyboard::X) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space))){
-            if(currentStamina > 0){
+            if(currentStamina > staminaDepletionRate){
                 attackInProgress = true;
-                attackTriggered = true;
+                // attackTriggered is used to prevent re-triggering while attacking
+            attackTriggered = true;
                 currentFrame = 0;
                 animationClock.restart();
                 currentStamina -= staminaDepletionRate;
@@ -75,6 +76,7 @@ int main(){
                 if(currentFrame >= numFrames){
                     currentFrame = 0;
                     attackInProgress = false;
+                    attackTriggered = false;
                 }
                 playerSprite.setTextureRect(attackFrames[currentFrame]);
                 animationClock.restart();
