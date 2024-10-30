@@ -49,14 +49,12 @@ int main(){
     while(window.isOpen()){
         sf::Event event;
         while(window.pollEvent(event)){if(event.type == sf::Event::Closed){window.close();}}
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::X) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
-            if (!attackTriggered) {
-                attackInProgress = true;
-                attackTriggered = true;
-                currentFrame = 0;
-                animationClock.restart();
-            }
-        }else{attackTriggered = false;}
+        if(!attackInProgress && (sf::Keyboard::isKeyPressed(sf::Keyboard::X) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space))){
+            attackInProgress = true;
+            attackTriggered = true;
+            currentFrame = 0;
+            animationClock.restart();
+        }
         if(attackInProgress){
             if(animationClock.getElapsedTime().asSeconds() > frameDuration){
                 currentFrame++;
