@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
+#include <SFML/Audio.hpp>
 #include <iostream>
 #include <cstdlib>
 #include <direct.h>
@@ -55,6 +56,15 @@ int main(){
     float staminaRecoveryRate = 5.0f;
     static bool attackInProgress = false;
     static bool attackTriggered = false;
+    // Load attack sound
+    sf::SoundBuffer attackBuffer;
+    if (!attackBuffer.loadFromFile("437113__cpawsmusic__sword-4.wav")) {
+        std::cerr << "Failed to load attack sound! Make sure the file path is correct." << std::endl;
+        std::cin.get();
+        return -1;
+    }
+    sf::Sound attackSound;
+    attackSound.setBuffer(attackBuffer);
     while(window.isOpen()){
         sf::Event event;
         while(window.pollEvent(event)){if(event.type == sf::Event::Closed){window.close();}}
@@ -62,11 +72,13 @@ int main(){
             if(currentStamina > staminaDepletionRate){
                 attackInProgress = true;
                 // attackTriggered is used to prevent re-triggering while attacking
-            attackTriggered = true;
+                attackTriggered = true;
                 currentFrame = 0;
                 animationClock.restart();
                 currentStamina -= staminaDepletionRate;
                 if (currentStamina < 0) currentStamina = 0;
+                // Play attack sound
+                attackSound.play();
             }
         }
 
@@ -92,6 +104,14 @@ int main(){
         // Update the stamina bar size based on current stamina
         float staminaPercentage = currentStamina / maxStamina;
         staminaBar.setSize(sf::Vector2f(200 * staminaPercentage, 20));
+        if (staminaPercentage > 0.5f) {
+            staminaBar.setFillColor(sf::Color::Green);
+        } else if (staminaPercentage > 0.25f) {
+            staminaBar.setFillColor(sf::Color::Yellow);
+        } else {
+            staminaBar.setFillColor(sf::Color::Red);
+        }
+
         frameOutline.setPosition(playerSprite.getPosition());
         window.clear(sf::Color::Yellow);
         window.draw(playerSprite);

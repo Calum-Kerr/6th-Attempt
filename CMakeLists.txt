@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.11)
-
 # Require modern C++
-set(CMAKE_CXX_STANDARD 17)  # Updated to C++17 to use <filesystem> features
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(Games_Engineering)
@@ -20,4 +19,4 @@ set(SFML_INCS "lib/sfml/include")
 file(GLOB_RECURSE SOURCES practical_1/*.cpp practical_1/*.h)
 add_executable(PRACTICAL_1 ${SOURCES})
 target_include_directories(PRACTICAL_1 PRIVATE ${SFML_INCS})
-target_link_libraries(PRACTICAL_1 sfml-graphics sfml-window sfml-system)
+target_link_libraries(PRACTICAL_1 sfml-graphics sfml-window sfml-system sfml-audio)
