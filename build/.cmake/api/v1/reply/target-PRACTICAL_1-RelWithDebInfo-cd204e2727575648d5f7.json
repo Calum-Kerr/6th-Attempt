@@ -84,11 +84,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"backtrace" : 2,

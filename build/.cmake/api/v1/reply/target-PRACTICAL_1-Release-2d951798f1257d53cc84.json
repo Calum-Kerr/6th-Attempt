@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/MinSizeRel/PRACTICAL_1.exe"
+			"path" : "bin/Release/PRACTICAL_1.exe"
 		},
 		{
-			"path" : "bin/MinSizeRel/PRACTICAL_1.pdb"
+			"path" : "bin/Release/PRACTICAL_1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
 				},
 				{
 					"fragment" : "-std:c++17"
@@ -84,11 +84,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"backtrace" : 2,
@@ -104,7 +104,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -113,17 +113,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\MinSizeRel\\sfml-graphics.lib",
+				"fragment" : "lib\\sfml\\lib\\Release\\sfml-graphics.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\MinSizeRel\\sfml-window.lib",
+				"fragment" : "lib\\sfml\\lib\\Release\\sfml-window.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\MinSizeRel\\sfml-system.lib",
+				"fragment" : "lib\\sfml\\lib\\Release\\sfml-system.lib",
 				"role" : "libraries"
 			},
 			{

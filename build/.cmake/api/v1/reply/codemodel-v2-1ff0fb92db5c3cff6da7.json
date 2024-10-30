@@ -214,21 +214,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Debug-304fbe3445817d5afc31.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-a4db21f2fd265cc13331.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ALL_BUILD::@12423b679883d15590f6",
-					"jsonFile" : "target-ALL_BUILD-Debug-b02381b55958ecea4121.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-56f547e60218e85ef5aa.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-Debug-0a46878979008d939656.json",
+					"jsonFile" : "target-PRACTICAL_1-Debug-aff86b2aabd148eb951d.json",
 					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
@@ -249,7 +249,7 @@
 				{
 					"directoryIndex" : 7,
 					"id" : "sfml-graphics::@8f027e26a9c49a14a54c",
-					"jsonFile" : "target-sfml-graphics-Debug-112776de3d6cf2f68785.json",
+					"jsonFile" : "target-sfml-graphics-Debug-7bfad48daec550e6ffa1.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},
@@ -496,21 +496,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Release-304fbe3445817d5afc31.json",
+					"jsonFile" : "target-ALL_BUILD-Release-a4db21f2fd265cc13331.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ALL_BUILD::@12423b679883d15590f6",
-					"jsonFile" : "target-ALL_BUILD-Release-b02381b55958ecea4121.json",
+					"jsonFile" : "target-ALL_BUILD-Release-56f547e60218e85ef5aa.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-Release-76bf47a3cc25f9819881.json",
+					"jsonFile" : "target-PRACTICAL_1-Release-2d951798f1257d53cc84.json",
 					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
@@ -531,7 +531,7 @@
 				{
 					"directoryIndex" : 7,
 					"id" : "sfml-graphics::@8f027e26a9c49a14a54c",
-					"jsonFile" : "target-sfml-graphics-Release-e245c7aadc35e4c2ad6f.json",
+					"jsonFile" : "target-sfml-graphics-Release-3f9d78c1cb648736ce31.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},
@@ -778,21 +778,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-MinSizeRel-304fbe3445817d5afc31.json",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a4db21f2fd265cc13331.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ALL_BUILD::@12423b679883d15590f6",
-					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b02381b55958ecea4121.json",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-56f547e60218e85ef5aa.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-MinSizeRel-74410f567076225b25fc.json",
+					"jsonFile" : "target-PRACTICAL_1-MinSizeRel-35427ddba9bf9426d554.json",
 					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
@@ -813,7 +813,7 @@
 				{
 					"directoryIndex" : 7,
 					"id" : "sfml-graphics::@8f027e26a9c49a14a54c",
-					"jsonFile" : "target-sfml-graphics-MinSizeRel-1e1772bdfacb573fb001.json",
+					"jsonFile" : "target-sfml-graphics-MinSizeRel-faf69241a81479f1712c.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},
@@ -1060,21 +1060,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-304fbe3445817d5afc31.json",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a4db21f2fd265cc13331.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ALL_BUILD::@12423b679883d15590f6",
-					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b02381b55958ecea4121.json",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-56f547e60218e85ef5aa.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PRACTICAL_1-RelWithDebInfo-1732545c7728bd683326.json",
+					"jsonFile" : "target-PRACTICAL_1-RelWithDebInfo-cd204e2727575648d5f7.json",
 					"name" : "PRACTICAL_1",
 					"projectIndex" : 0
 				},
@@ -1095,7 +1095,7 @@
 				{
 					"directoryIndex" : 7,
 					"id" : "sfml-graphics::@8f027e26a9c49a14a54c",
-					"jsonFile" : "target-sfml-graphics-RelWithDebInfo-a0f83b4fd4c5bd8e0353.json",
+					"jsonFile" : "target-sfml-graphics-RelWithDebInfo-370970902d407f4bd19b.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},

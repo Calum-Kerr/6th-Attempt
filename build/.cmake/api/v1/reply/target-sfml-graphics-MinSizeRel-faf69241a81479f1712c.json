@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/Debug/sfml-graphics-d-2.dll"
+			"path" : "bin/MinSizeRel/sfml-graphics-2.dll"
 		},
 		{
-			"path" : "lib/sfml/lib/Debug/sfml-graphics-d.lib"
+			"path" : "lib/sfml/lib/MinSizeRel/sfml-graphics.lib"
 		},
 		{
-			"path" : "lib/sfml/lib/Debug/sfml-graphics-d.pdb"
+			"path" : "lib/sfml/lib/MinSizeRel/sfml-graphics-d.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -113,7 +113,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
 				},
 				{
 					"fragment" : "-std:c++17"
@@ -213,7 +213,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DWIN32 -D_DEBUG"
+					"fragment" : "-DWIN32"
 				}
 			],
 			"defines" : 
@@ -271,11 +271,11 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "sfml-window::@344d4f502e197fb19f4c"
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
@@ -309,16 +309,16 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "..\\..\\..\\lib\\Debug\\sfml-window-d.lib",
+				"fragment" : "..\\..\\..\\lib\\MinSizeRel\\sfml-window.lib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "..\\..\\..\\lib\\Debug\\sfml-system-d.lib",
+				"fragment" : "..\\..\\..\\lib\\MinSizeRel\\sfml-system.lib",
 				"role" : "libraries"
 			},
 			{
@@ -333,7 +333,7 @@
 		"language" : "CXX"
 	},
 	"name" : "sfml-graphics",
-	"nameOnDisk" : "sfml-graphics-d-2.dll",
+	"nameOnDisk" : "sfml-graphics-2.dll",
 	"paths" : 
 	{
 		"build" : "lib/sfml/src/SFML/Graphics",

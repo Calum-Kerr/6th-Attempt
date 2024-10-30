@@ -44,19 +44,29 @@ int main(){
     frameOutline.setOutlineColor(sf::Color::Red);
     frameOutline.setOutlineThickness(2);
     frameOutline.setPosition(playerSprite.getPosition());
+    static bool attackInProgress = false;
+    static bool attackTriggered = false;
     while(window.isOpen()){
         sf::Event event;
         while(window.pollEvent(event)){if(event.type == sf::Event::Closed){window.close();}}
-        bool isAttacking = sf::Keyboard::isKeyPressed(sf::Keyboard::X) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
-        if(isAttacking){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::X) || sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+            if (!attackTriggered) {
+                attackInProgress = true;
+                attackTriggered = true;
+                currentFrame = 0;
+                animationClock.restart();
+            }
+        }else{attackTriggered = false;}
+        if(attackInProgress){
             if(animationClock.getElapsedTime().asSeconds() > frameDuration){
-                currentFrame = (currentFrame + 1) % numFrames;
+                currentFrame++;
+                if(currentFrame >= numFrames){
+                    currentFrame = 0;
+                    attackInProgress = false;
+                }
                 playerSprite.setTextureRect(attackFrames[currentFrame]);
                 animationClock.restart();
             }
-        }else{
-            currentFrame = 0;
-            playerSprite.setTextureRect(attackFrames[currentFrame]);
         }
         frameOutline.setPosition(playerSprite.getPosition());
         window.clear(sf::Color::Yellow);
