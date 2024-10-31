@@ -128,7 +128,7 @@ int main(){
             staminaBar.setFillColor(sf::Color::Green); //green if more than 50%
         }else if(staminaPercentage > 0.25f){
             staminaBar.setFillColor(sf::Color::Yellow); //yellow if between 25% and 50%
-        }else{//fyi.. we can see the yellow as the background is yellow
+        }else{
             staminaBar.setFillColor(sf::Color::Red); //red if below 25%
         }
 
@@ -142,7 +142,7 @@ int main(){
         }
 
         frameOutline.setPosition(playerSprite.getPosition()); //update frame outline position to match player sprite
-        window.clear(sf::Color::Yellow); //clear the window with yellow background
+        window.clear(sf::Color::Black); //clear the window with black background
         window.draw(playerSprite); //draw the player sprite
         window.draw(frameOutline); //draw the outline around the player sprite
         window.draw(staminaBar); //draw the stamina bar
