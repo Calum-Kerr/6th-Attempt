@@ -5,7 +5,7 @@
 		"commands" : [],
 		"files" : 
 		[
-			"lib/sfml/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -20,35 +20,38 @@
 			"id" : "sfml-window::@344d4f502e197fb19f4c"
 		},
 		{
-			"id" : "sfml-system::@ade90ebdf211b83bd87c"
+			"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "sfml-main::@900b937beac28bdf4572"
 		},
 		{
-			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
+			"id" : "sfml-system::@ade90ebdf211b83bd87c"
 		},
 		{
 			"id" : "sfml-network::@cbc9a91aa7ffe1543f3e"
 		},
 		{
-			"id" : "sfml-audio::@f41189585cfb974df97d"
+			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "sfml-audio::@f41189585cfb974df97d"
 		}
 	],
 	"folder" : 
 	{
 		"name" : "CMake"
 	},
-	"id" : "ALL_BUILD::@12423b679883d15590f6",
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
 	"name" : "ALL_BUILD",
 	"paths" : 
 	{
-		"build" : "lib/sfml",
-		"source" : "lib/sfml"
+		"build" : ".",
+		"source" : "."
 	},
 	"sources" : [],
 	"type" : "UTILITY"

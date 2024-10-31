@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/Release/PRACTICAL_1.exe"
+			"path" : "bin/Debug/PRACTICAL_1.exe"
 		},
 		{
-			"path" : "bin/Release/PRACTICAL_1.pdb"
+			"path" : "bin/Debug/PRACTICAL_1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
 				},
 				{
 					"fragment" : "-std:c++14"
@@ -95,11 +95,11 @@
 			"id" : "sfml-graphics::@8f027e26a9c49a14a54c"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "sfml-audio::@f41189585cfb974df97d"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+			"backtrace" : 2,
+			"id" : "sfml-audio::@f41189585cfb974df97d"
 		}
 	],
 	"id" : "PRACTICAL_1::@6890427a1f51a3e7e1df",
@@ -108,31 +108,31 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\Release\\sfml-graphics.lib",
+				"fragment" : "lib\\sfml\\lib\\Debug\\sfml-graphics-d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\Release\\sfml-window.lib",
+				"fragment" : "lib\\sfml\\lib\\Debug\\sfml-window-d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\Release\\sfml-audio.lib",
+				"fragment" : "lib\\sfml\\lib\\Debug\\sfml-audio-d.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\sfml\\lib\\Release\\sfml-system.lib",
+				"fragment" : "lib\\sfml\\lib\\Debug\\sfml-system-d.lib",
 				"role" : "libraries"
 			},
 			{
