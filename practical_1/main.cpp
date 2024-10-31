@@ -70,6 +70,23 @@ int main(){
     sf::Sound attackSound; //create a sound object to play the sound
     attackSound.setBuffer(attackBuffer); //set the buffer for the sound
 
+    //fps counter setup
+    sf::Font font; //create font for text
+    if(!font.loadFromFile("arial.ttf")){ //load font from file
+        std::cerr << "Failed to load font! Make sure the file path is correct." << std::endl; //error message if loading fails
+        std::cin.get(); //wait for user input before closing
+        return -1; //return error code
+    }
+    sf::Text fpsText; //create text object for fps counter
+    fpsText.setFont(font); //set font for the text
+    fpsText.setCharacterSize(14); //set character size for text
+    fpsText.setFillColor(sf::Color::White); //set text color to white
+    fpsText.setPosition(850, 10); //set position of fps counter in top right corner
+
+    sf::Clock fpsClock; //clock to measure time for fps calculation
+    int frameCount = 0; //initialize frame count
+    float fps = 0.0f; //initialize fps value
+
     while(window.isOpen()){ //main game loop runs while the window is open
         sf::Event event; //event object to hold window events
         while(window.pollEvent(event)){if(event.type == sf::Event::Closed){window.close();}} //close if clicked
@@ -115,11 +132,21 @@ int main(){
             staminaBar.setFillColor(sf::Color::Red); //red if below 25%
         }
 
+        //fps counter update
+        frameCount++; //increment frame count
+        if(fpsClock.getElapsedTime().asSeconds() >= 1.0f){ //if one second has elapsed
+            fps = frameCount / fpsClock.getElapsedTime().asSeconds(); //calculate fps
+            fpsText.setString("FPS: " + std::to_string(static_cast<int>(fps))); //update fps text
+            frameCount = 0; //reset frame count
+            fpsClock.restart(); //restart fps clock
+        }
+
         frameOutline.setPosition(playerSprite.getPosition()); //update frame outline position to match player sprite
         window.clear(sf::Color::Yellow); //clear the window with yellow background
         window.draw(playerSprite); //draw the player sprite
         window.draw(frameOutline); //draw the outline around the player sprite
         window.draw(staminaBar); //draw the stamina bar
+        window.draw(fpsText); //draw the fps counter
         window.display(); //display everything drawn to the window
     }
     std::cin.get(); //wait for user input before closing
